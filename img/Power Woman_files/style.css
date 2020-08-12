@@ -1,0 +1,341 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+    box-sizing: border-box;
+}
+
+/* ---HEADER--- */
+
+.flex-container{
+    
+    background: purple;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    color: white;
+}
+
+.menu-nav{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 18px;
+}
+
+.menu-nav a{
+    text-decoration: none;
+    padding: 23px;
+    color: white;
+}
+
+.menu-nav a:hover{
+    background: rgb(56, 2, 56)
+}
+
+.capa{
+    background-image: url(../Imagens/3466858.jpg);
+    min-height: 100vh;
+    background-size: cover;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.capa h1{
+    max-width: 500px;
+    font-size: 50px;
+    margin-top: 70px;
+    margin-bottom: 0;
+    text-shadow: 2px 2px black;
+}
+
+.capa h2{
+    max-width: 500px;
+    font-size: 18px;
+    text-align: center;
+    border-top: 2px solid white;
+    margin-top: 8px;
+    padding: 15px;
+}
+
+.botao{color: white;
+border: 2px solid white;
+margin-top: 14px;
+padding: 5px 10px;
+align-items: center;
+border-radius: 8px;
+text-decoration: none;
+}
+
+.botao:hover{
+    background-color: rgb(56, 2, 56);
+    border: 0px;
+}
+
+/* ---PROJETO---*/
+
+.projeto{
+    display: flex;
+    width: 100%;
+    margin top: 20px;
+    padding: 30px 0px 20px 0px;
+
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 227, 235);
+}
+
+.video{
+    flex: 50%;
+    margin-top: 5px;
+    padding: 5px 50px;
+}
+
+.sobre-projeto h1{
+    text-align: center;
+    font-size: 30px;
+    margin top: 10px;
+}
+
+.sobre-projeto p{
+    margin-right: 15px;
+    text-align: justify;
+}
+
+/*---ESPORTE*/
+
+.esporte{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px 20px 0px;
+}
+
+.card{
+    flex: 50%;
+    padding: 0px 50px;
+    margin-top: 30px;
+
+}
+
+.sobre-esporte{
+    flex: 50%;
+    padding: 0% 50px;
+}
+
+.sobre-esporte h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.sobre-esporte p{
+    text-align: justify;
+}
+
+/*---TRABALHO---*/
+
+.trabalho{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px 30px 0px;
+    background-color: rgb(235, 227, 235);
+}
+
+.foto-trabalho{
+    max-width: 100%;
+    padding: 50px;
+}
+
+.sobre-trabalho{
+    flex: 50%;
+    padding: 0px 40px;
+}
+
+.sobre-trabalho h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.sobre-trabalho p{
+    text-align: justify;
+}
+
+/*---INSPIRAÇÕES----*/
+
+.inspiracoes{
+    max-width: 100%;
+    padding: 30px 0 20px 0;
+}
+
+.inspiracoes h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.inspiracoes h2{
+    text-align: center;
+    font-size: 16px;
+}
+
+.container-cards{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.card-inspiracoes{
+    max-width: 400px;
+    text-align: center justify;
+    margin: 10px;
+    flex: 25%;
+}
+
+.card-inspiracoes img{
+    max-width: 100%;
+    align-items: center;
+}
+
+/*---SOBRE MIM---*/
+
+.sobre{
+    display: flex;
+    max-width: 100%;
+    margin top: 10px;
+    padding: 30px 20px 20px 0px;
+    background-color: rgb(235, 227, 235);
+}
+
+.coluna{
+    flex: 50%;
+    padding: 0px 40px;
+}
+
+.coluna img{
+    max-width: 100%;
+}
+
+.coluna h1{
+    margin-top: 8px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.coluna h4{
+    text-align: center;
+}
+
+.coluna p{
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/*--RODA-PÉ--*/
+
+footer{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px 50px 0px;
+    background-color: rgb(56, 2, 56);
+    color:#ffffff
+}
+
+/*----RESPONSIVIDADE----*/
+
+@media (max-width: 760px){
+
+    /*-- HEADER Responsivo*/
+    .flex-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .menu-nav{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu-nav a{
+        padding: 2px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .projeto{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .video{
+        flex: 1;
+        margin-left: 65px;
+        padding: 20px;
+        width: 100%;
+        align-items: center;
+    }
+
+
+    .sobre-projeto{
+        padding: 20px;
+    }
+
+
+    .esporte{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        flex: 1;
+        margin-left: 65px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .sobre-esporte{
+        padding: 20px;
+    }
+
+    .trabalho{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto-trabalho{
+        flex: 1;
+        margin-left: 90px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .sobre-trabalho{
+        padding: 20px;
+    }
+
+    .container-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre{
+        flex-direction: column;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+}
+
+
